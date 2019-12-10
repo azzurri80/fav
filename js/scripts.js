@@ -12,6 +12,11 @@ $(document).ready(function() {
       userInput[3] = [$("input#sport").val()];
       userInput[4] = [$("input#game").val()];
 
-    alert(userInput);
+    var cloneUserInput = [];
+      cloneUserInput.push(userInput[1]);
+      cloneUserInput.push(userInput[0]);
+      cloneUserInput.push(userInput[2]);
+
+    $("#output").append().text(cloneUserInput).show();
   });
 });
